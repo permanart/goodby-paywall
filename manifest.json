@@ -1,0 +1,25 @@
+{
+    "name": "Good by paywall",
+    "description": "goodbypaywall",
+    "version": "0.1",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons":
+    {
+        "16": "assets/icon-light-green.png",
+        "512": "assets/icon-light-green.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://id.techinasia.com/*",
+                "https://www.kompas.id/*"
+            ],
+            "js": [
+                "app.js"
+            ]
+        }
+    ]
+}
